@@ -19,7 +19,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    searchMovies('Ba');
+    searchMovies('love');
   }, []);
   const searchMovies = async (title) =>{
     const response = await fetch(`${API_URL}&s=${title}`);
